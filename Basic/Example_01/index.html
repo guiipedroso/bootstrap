@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML, JS e CSS</title>
+    <style>
+        h1{
+            color: red;
+
+        }
+        p{
+            color:black;
+            font-size: 50px;
+        }
+
+        #aleatorio{
+            font-size: 30px;
+            font-family: Georgia, 'Times New Roman', Times, serif;   
+        }
+
+        .muda_cor{
+            color: blue;
+        }
+        
+    </style>
+
+
+
+</head>
+<body>
+    <h1>Guilherme Pedroso</h1>
+    <h4 id="aleatorio">Computer</h4>
+    <h6 class = "muda_cor">Engennier</h6>
+    <p>Isso é um <b>teste</b></p>
+    <form action="/send.php" method="POST">
+        <input type="email" placeholder="Digite o seu email" name='email' required> <br>
+        <input type="password" placeholder="Digite a sua senha" name='pass' required> <br>
+        <input onclick="enviar()" type="submit" value="Entrar">
+
+    </form>
+
+<script>
+
+    function enviar()
+    {
+    //e.preventDefault();
+    alert("Ola, vamos enviar o formulario!");
+
+
+    }
+
+    
+</script>
+
+</body>
+</html>
